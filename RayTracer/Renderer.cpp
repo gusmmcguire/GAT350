@@ -16,7 +16,7 @@ bool Renderer::Initialize(int width, int height, bool fullscreen) {
 		return false;
 	}
 
-	window = SDL_CreateWindow("2D Renderer", 100, 100, width, height, SDL_WINDOW_SHOWN);
+	window = SDL_CreateWindow("Ray Tracer", 100, 100, width, height, SDL_WINDOW_SHOWN);
 	if (!window) {
 		std::cout << "SDL Error: " << SDL_GetError() << std::endl;
 		SDL_Quit();
