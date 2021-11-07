@@ -12,6 +12,7 @@ bool Plane::Hit(const ray_t& r, float tMin, float tMax, raycastHit_t& hit) {
 		hit.point = r.pointAt(t);
 		hit.normal = normal;
 		hit.material = material.get();
+		hit.uv = GetPlanarUV(hit.point);
 		return true;
 	}
 
